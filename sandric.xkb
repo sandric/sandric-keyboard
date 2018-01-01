@@ -1,0 +1,6 @@
+xkb_keymap {
+    xkb_keycodes  { include "sandric" };
+    xkb_types     { include "sandric" };
+    xkb_compat    { include "complete" };
+    xkb_symbols   { include "pc+sandric(colemak)" };
+};

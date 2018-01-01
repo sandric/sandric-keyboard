@@ -1,0 +1,6 @@
+default xkb_keycodes "sandric" {
+  include "evdev+aliases(qwerty)"
+
+  <PRSC> = 108;
+  <RALT> = 107;
+};

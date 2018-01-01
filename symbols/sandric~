@@ -1,0 +1,297 @@
+partial alphanumeric_keys xkb_symbols "colemak" {
+
+    include "us"
+    name[Group1]= "English (Colemak)";
+
+    key <TLDE> {[grave, asciitilde]};
+    key <AE01> {[1,         exclam]};
+    key <AE02> {[2,             at]};
+    key <AE03> {[3,     numbersign]};
+    key <AE04> {[4,         dollar]};
+    key <AE05> {[5,        percent]};
+    key <AE06> {[6,    asciicircum]};
+    key <AE07> {[7,      ampersand]};
+    key <AE08> {[8,       asterisk]};
+    key <AE09> {[9,      parenleft]};
+    key <AE10> {[0,     parenright]};
+    key <AE11> {[minus, underscore]};
+    key <AE12> {[equal,       plus]};
+
+    key <AD01> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[q, Q, question, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD01>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AD02> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[w, W, underscore, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD02>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AD03> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[f, F, equal, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD03>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AD04> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[p, P, exclam, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD04>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AD05> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[g, G, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD05>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AD06> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[j, J, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD06>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<PGUP>,
+		                   clearmods=Control),
+		       RedirectKey(key=<PGUP>,
+		                   clearmods=Control)]};
+    key <AD07> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[l, L, bar, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD07>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<HOME>,
+		                   clearmods=Control),
+		       RedirectKey(key=<HOME>,
+		                   clearmods=Control)]};
+    Key <AD08> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[u, U, bracketleft, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD08>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<UP>,
+		                   clearmods=Control),
+		       RedirectKey(key=<UP>,
+		                   clearmods=Control)]};
+    key <AD09> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[y, Y, bracketright, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD09>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<END>,
+		                   clearmods=Control),
+		       RedirectKey(key=<END>,
+		                   clearmods=Control)]};
+    key <AD10> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[b, B, ampersand, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AD10>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<PGDN>,
+		                   clearmods=Control),
+		       RedirectKey(key=<PGDN>,
+		                   clearmods=Control)]};
+
+    key <AC01> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[a, A, apostrophe, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC01>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AC02> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[r, R, colon, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC02>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AC03> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[s, S, semicolon, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC03>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AC04> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[t, T, quotedbl, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC04>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AC05> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[d, D, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC05>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+    key <AC06> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[h, H, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC06>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+
+    key <AC07> {
+      type="SANDRIC_SUPER_CONTROL_ALT_SHIFTCONTROL",
+      symbols[Group1]=[n, N, parenleft, NoSymbol, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC07>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<LEFT>,
+		                   clearmods=Control),
+		       RedirectKey(key=<RTRN>,
+		                   clearmods=Alt),
+		       RedirectKey(key=<LEFT>,
+		                   clearmods=Control)]};
+    key <AC08> {
+      type="SANDRIC_SUPER_CONTROL_ALT_SHIFTCONTROL",
+      symbols[Group1]=[e, E, braceleft, NoSymbol, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC08>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<DOWN>,
+		                   clearmods=Control),
+		       RedirectKey(key=<I120>,
+		                   clearmods=Alt),
+		       RedirectKey(key=<DOWN>,
+		                   clearmods=Control)]};
+    key <AC09> {
+      type="SANDRIC_SUPER_CONTROL_SHIFT",
+      symbols[Group1]=[i, I, braceright, NoSymbol, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC09>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<RGHT>,
+		                   clearmods=Control),
+		       RedirectKey(key=<RGHT>,
+		                   clearmods=Control)]};
+    key <AC10> {
+      type="SANDRIC_SUPER",
+      symbols[Group1]=[o, O, parenright, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<AC10>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree)]};
+
+    key <AB02> {[x, X]};
+    key <AB03> {[c, C]};
+    key <AB04> {[v, V]};
+    key <AB05> {[space, space]};
+    key <AB06> {[k, K]};
+    key <AB07> {
+      type="SANDRIC_ALT",
+      symbols[Group1]=[m, M, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       RedirectKey(key=<BKSP>,
+		                   clearmods=Alt)]
+    };
+    key <AB08> {[z, Z]};
+
+    key <LALT> {
+      type="SANDRIC_SUPER_CONTROL",
+      symbols[Group1]=[comma, less, backslash, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<LALT>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<AE11>,
+		                   clearmods=Control)]};
+    key <PRSC> {
+      type="SANDRIC_SUPER_ALT",
+      symbols[Group1]=[period, greater, asterisk, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		       NoAction(),
+		       RedirectKey(key=<PRSC>,
+		                   clearmods=Mod4,
+				   modifiers=LevelThree),
+		       RedirectKey(key=<AE12>,
+		                   clearmods=Control,
+				   modifiers=Shift)]};
+
+
+    key.type[Group1] = "NONE_SHIFT_ALT_ALPHABETIC";
+    key <AB01> { [            n,            N,         NoSymbol ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<LEFT>,clearMods=Alt) ] };
+
+
+
+    key <I120> {[Tab]};
+
+    key <TAB> {[Super_L],
+                 actions[Group1]=[SetMods(mods=Super)],
+                 vmods=Super};
+    key <AD11> {[Super_L],
+                 actions[Group1]=[SetMods(mods=Super)],
+                 vmods=Super};
+
+    key <AC11> {[Alt_L], actions[Group1]=[SetMods(mods=Alt)]};
+    include "ctrl(nocaps)"
+    key <SPCE> {[Shift_L], actions[Group1]=[SetMods(mods=Shift)]};
+};

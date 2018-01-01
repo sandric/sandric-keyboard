@@ -1,0 +1,153 @@
+default xkb_types "sandric" {
+
+    include "complete"
+
+
+    type "SANDRIC_SUPER" {
+	modifiers = Shift+LevelThree+Mod4;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[levelThree] = Level3;
+	map[Mod4] = Level4;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Super";
+    };
+
+    type "SANDRIC_CONTROL" {
+	modifiers = Shift+Control;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[Control] = Level3;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "Control";
+    };
+
+    type "SANDRIC_ALT" {
+	modifiers = Shift+Alt;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[Alt] = Level3;
+        level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "Alt";
+    };
+
+    type "SANDRIC_SUPER_CONTROL" {
+	modifiers = Shift+LevelThree+Mod4+Control;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[levelThree] = Level3;
+	map[Mod4] = Level4;
+	map[Control] = Level5;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Super";
+	level_name[Level5] = "Control";
+    };
+
+    type "SANDRIC_SUPER_ALT" {
+	modifiers = Shift+LevelThree+Mod4+Alt;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[levelThree] = Level3;
+	map[Mod4] = Level4;
+	map[Alt] = Level5;
+        level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Super";
+	level_name[Level5] = "Alt";
+    };
+
+    type "SANDRIC_SUPER_CONTROL_SHIFT" {
+	modifiers = Shift+LevelThree+Mod4+Control;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[levelThree] = Level3;
+	map[Mod4] = Level4;
+	map[Control] = Level5;
+	map[Control+Shift] = Level6;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Super";
+	level_name[Level5] = "Control";
+	level_name[Level6] = "Control+Shift";
+    };
+
+    type "SANDRIC_SUPER_ALT_SHIFT" {
+	modifiers = Shift+LevelThree+Mod4+Alt;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[levelThree] = Level3;
+	map[Mod4] = Level4;
+	map[Alt] = Level5;
+	map[Alt+Shift] = Level6;
+        level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+        level_name[Level4] = "Super";
+	level_name[Level5] = "Alt";
+	level_name[Level6] = "Alt+Shift";
+    };
+
+    type "SANDRIC_SUPER_CONTROL_ALT" {
+	modifiers = Shift+LevelThree+Control+Mod4+Alt;
+	map[None] = Level1;
+        map[Shift] = Level2;
+	map[levelThree] = Level3;
+        map[Mod4] = Level4;
+	map[Control] = Level5;
+	map[Alt] = Level6;
+
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Mod4";
+	level_name[Level5] = "Control";
+	level_name[Level6] = "Alt";
+    };
+
+    type "SANDRIC_SUPER_CONTROL_ALT_SHIFTCONTROL" {
+	modifiers = Shift+LevelThree+Control+Mod4+Alt;
+	map[None] = Level1;
+        map[Shift] = Level2;
+	map[levelThree] = Level3;
+        map[Mod4] = Level4;
+	map[Control] = Level5;
+	map[Alt] = Level6;
+	map[Control+Shift] = Level7;
+
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Mod4";
+	level_name[Level5] = "Control";
+	level_name[Level6] = "Alt";
+	level_name[Level7] = "Shift+Control";
+    };
+
+
+    type "SANDRIC" {
+	modifiers = Shift+LevelThree+Control+Mod4+Alt;
+	map[None] = Level1;
+        map[Shift] = Level2;
+	map[levelThree] = Level3;
+        map[Mod4] = Level4;
+	map[Control] = Level5;
+	map[Alt] = Level6;
+	map[Control+Shift] = Level7;
+
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "LevelThree";
+	level_name[Level4] = "Mod4";
+	level_name[Level5] = "Control";
+	level_name[Level6] = "Alt";
+	level_name[Level7] = "Shift+Control";
+    };
+};
