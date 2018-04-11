@@ -16,6 +16,8 @@ partial alphanumeric_keys xkb_symbols "colemak" {
     key <AE10> {[0,     parenright]};
     key <AE11> {[minus, underscore]};
     key <AE12> {[equal,       plus]};
+    key <AE13> {[slash,       minus]};
+    key <AE14> {[backslash,   plus]};
 
 
     key <SPCE> {[Shift_R], actions[Group1]=[SetMods(mods=Shift)]};
@@ -248,9 +250,33 @@ partial alphanumeric_keys xkb_symbols "colemak" {
 
     key <AB02> {[x, X]};
     key <AB03> {[c, C]};
-    key <AB04> {[v, V]};
+
+    key <AB04> {
+      type="SANDRIC_SUPER_CONTROL",
+      symbols[Group1]=[v, V, comma, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		                   NoAction(),
+		                   RedirectKey(key=<AB04>,
+                         clearmods=Mod4,
+				                 modifiers=LevelThree),
+                       RedirectKey(key=<AE13>,
+				                           clearmods=Control)]};
+
     key <AB05> {[space, space]};
-    key <AB06> {[k, K]};
+
+    key <AB06> {
+      type="SANDRIC_SUPER_CONTROL",
+      symbols[Group1]=[k, K, period, NoSymbol, NoSymbol],
+      actions[Group1]=[NoAction(),
+                       NoAction(),
+		                   NoAction(),
+		                   RedirectKey(key=<AB06>,
+                         clearmods=Mod4,
+				                 modifiers=LevelThree),
+                       RedirectKey(key=<AB10>,
+                                   clearmods=Control)]};
+
     key <AB07> {
       type="SANDRIC_ALT",
       symbols[Group1]=[m, M, NoSymbol],
@@ -260,6 +286,8 @@ partial alphanumeric_keys xkb_symbols "colemak" {
 		                   clearmods=Alt)]
     };
     key <AB08> {[z, Z]};
+
+    key <AB10> {[backslash, plus]};
 
     key <LALT> {
       type="SANDRIC_SUPER_CONTROL",
